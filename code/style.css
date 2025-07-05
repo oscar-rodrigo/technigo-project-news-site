@@ -1,4 +1,87 @@
 html {
-  background: #0025ff;
+  background: #bccfff;
   color: #fff;
+  padding: 10px;
+  margin: 10px;
+}
+
+header {
+  display: flex;
+  background: whitesmoke;
+  border: 2px solid black;
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+}
+
+.logo {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: center;
+  margin: 0;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.right-side-header {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.left-side-header {
+flex-grow: 1;
+width: 25%;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;   /* Remove underline from links */
+  color: #333;             /* Set link color */
+  font-weight: bold;
+  padding: 5px 10px;       /* Add padding to make links easier to click */
+  transition: color 0.4s ease; /* Smooth transition for hover effect */
+}
+
+header nav ul li a:hover {
+  color: dodgerblue;       /* Change color on hover */
+}
+
+.big-news-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  min-height: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 15px;
+  gap: 5px;
+}
+
+.big-news-child-1{
+  text-align: center;
+  color: black;
+}
+
+
+.big-news-child-2{
+  text-align: center;
+  color: black;
 }
